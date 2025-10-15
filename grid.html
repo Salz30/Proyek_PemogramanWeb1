@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Grid Layout</title>
+        <link rel="stylesheet" href="bootstrap-5.3.8/bootstrap-5.3.8/dist/css/bootstrap.min.css">
+        <style type="text/css">
+            div{
+                background: rgb(236, 236, 255);
+                text-align: center;
+                border: 1px solid black;
+                padding: 10px;
+                color: rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+
+     <!-- Add Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/Arigathanks.jpeg" alt="Logo" height="100" weight="100" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" style="color: black;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: black;">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>   
+
+      <div class="container-fluid">
+        <!-- baris ke 1 adalah header, full layar-->
+         <div class="row" style="background: #ffffff; color: white;">
+            <div class="col-md-12">
+                <h1>LATIHAN bootstrap</h1>
+                <p>Ini adalah contoh penggunaan grid pada bootstrap</p>
+            </div>
+         </div>
+         <!--end baris 1-->
+
+         <!--baris ke 2 adalah konten, full layar-->
+         <div class="row">
+            <div class="col-md-12">
+                <h2>Konten 1</h2>
+                <p>Ini adalah bagian konten dari halaman web.</p>
+                <p>Kemarin saya lihat anjing pakai kacamata hitam, seriusan.</p>
+                <p>Kalau awan itu terbuat dari kapas, apakah bisa dijadikan bantal raksasa?</p>
+            </div>
+      </div>
+        <!--end baris 2-->
+
+        <!--baris ke 3 adalah konten 2,3, dan 4, setiap konten lebarnya adalah 1/4-->
+        <div class="row">
+            <!--konten 2-->
+            <div class="col-md-4">
+                <h2>Konten 2</h2>
+                <p>Ini adalah bagian konten 2 dari halaman web.</p>
+        </div>
+
+        <!--konten 3-->
+        <div class="col-md-4">
+            <h2>Konten 3</h2>
+            <p>Ini adalah bagian konten 3 dari halaman web.</p>
+        </div>
+        <!--konten 4-->
+        <div class="col-md-4">
+            <h2>Konten 4</h2>
+            <p>Ini adalah bagian konten 4 dari halaman web.</p>
+        </div>
+        </div>
+        <!--end baris 3-->
+        <!--baris ke 4 adalah footer-->
+        <div class="row" style="background: #6666ff; color: white;">
+            <div class="col-md-12">
+                <p>Pemograman WEB 1</p>
+                <p>Ini adalah bagian footer dari halaman web.</p>
+            </div>
+        </div>
+        <!--end baris 4-->
+        
+        </div>
+        <!--END CONTAINER-->
+    </body>
+</html>
