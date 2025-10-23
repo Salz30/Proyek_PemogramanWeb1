@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman Azhar Latisio UTB</title>
+ <style>
+        body {
+            font-family: sans-serif;
+            font-size: larger;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #00ff11;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        #pantun {
+            font-style: italic;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Halo, Selamat datang di web tugas E-learning saya</h1>
+        <p>Saya Salman Azhar Latisio memenuhi tugas E-learning pertemuan 5 ini</p>
+        <p>NIM saya yaitu 23552011046</p>
+        <p>Saya dari fakultas industri kreatif prodi Teknik Informatika</p>
+
+        <button id="ubahPantun">Ubah dengan Pantun</button>
+        <p id="pantun"></p>
+    </div>
+
+    <script>
+        const tombolUbah = document.getElementById('ubahPantun');
+        const teksPantun = document.getElementById('pantun');
+
+        const daftarPantun = [
+            "Ada gula ada semut,\nRajin belajar pasti তামাত.",
+            "Jalan-jalan ke kota Medan,\nJangan lupa beli bika ambon.",
+            "Hulur senyum manis sekali,\nItulah dia si jantung hati."
+        ];
+
+        tombolUbah.addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * daftarPantun.length);
+            teksPantun.textContent = daftarPantun[randomIndex];
+        });
+    </script>
+</body>
+</html>
